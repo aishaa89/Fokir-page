@@ -1,0 +1,405 @@
+/* 0=> 600px (small) 
+ 601=> 768px (M) 
+ 769=> 992px (large) 
+ 993=> 1200px (xL) 
+ 1200>>>>  (xxL) 
+
+*/
+/* max-width==>600 */
+@media screen and (max-width:600px) {
+   
+    /* Start responsive of home section */
+    .home .navbar ul{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: red;
+        width: 100%;
+        z-index: 99999999;
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s all;
+     }
+     .home .navbar .icon{
+         width :30px;
+         height: 40px;
+         position: absolute;
+         top: 50%;
+         right: 20px;
+         transform: translateY(-50%);
+     }
+     .home .icon span{
+        width: 100%;
+        height: 3px;
+        display: inline-block;
+        background-color: red;
+        position: absolute;
+     }
+     .icon span:nth-child(1){
+         top: 15px;
+     }
+     .icon span:nth-child(2){
+         top: 50%;
+         transform: translateY(50%);
+     }
+     .icon span:nth-child(3){
+         bottom: 10px;
+     }
+     .home .icon:hover + ul{
+         opacity: 1;
+         visibility: visible;
+     }
+ 
+    .home .navbar ul li {
+        float: none;
+    }
+    .home .navbar ul li a {
+        font-size: small;
+    }
+    .home .navbar .title{
+        left: 10px;
+    }
+    .home .home-caption h1{
+        right: 20%;
+        font-size: 50px;
+
+    }
+    .home .home-caption h4{
+        right: 30%;
+        font-size: 20px;
+    }
+    .home  .home-caption h4::after{
+
+        font-size: 20px;}
+   /* End responsive of home section */
+
+
+   /* Start Rwd of about Section */
+   .about .about-picture{
+       width: 100%;
+   }
+   .about .about-picture::before{
+    border: none;
+   }
+.about .about-picture{
+   position: static;
+   width: 100%; 
+
+  }
+  .about .about-picture .Social{
+
+    display: none;
+  }
+
+   .about .about-Content{
+    width: 100%;
+    margin-top: 20px;
+    float: left;  
+    left: 0;
+   }
+   .about .about-Content .list .Left-list{
+    width: 100%;
+   }
+
+   /* Start RWD for Service Section */
+    .services .Services-content .item{
+        width: 100%;
+        
+    }
+
+   /* Start RWD for Portfolio Section */
+
+
+    .Portfolio .Portfolio-content .items-one .img{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .Portfolio .Portfolio-content .items-two .img{
+        width: 100%;
+        padding-top: 10px;
+
+    }
+
+
+    /* ----------------Counter Section-------------- */
+    .Counter .counter-content .Counter-item{
+        width: 100%;
+        margin-top: 20px;
+    }
+    /*----------- feedback Section ---------------*/
+    .feedback .feedback-content{
+        width: 100%;
+        padding: 50px 20px;
+        
+    }
+    .feedback .feedback-content .feed-profile{
+        width: 70%;  
+       position: relative;
+       left: 20%;
+    }
+    .feedback .feedback-content .feed-brief{
+        width: 100%;
+        margin-top: 10px;
+     
+    }
+   /* Blog Section */
+
+   .Blog .Blog-item{
+    width: 100%;
+    padding: 10px;
+}
+
+/* Contact Section */
+
+#name , #Email{
+    width: 100%;
+    margin-left: 0;
+}
+}
+
+/*------------------------ max-width=>768 ----------------------------------------*/
+
+@media screen and (min-width:600px)and (max-width:768px) {
+   
+   /* Start responsive of home section */
+    .home .navbar ul{
+       position: absolute;
+       background-color: red;
+       width: 100%;
+       left: 0;
+       top: 100%;
+       z-index: 99999999;
+       opacity: 0;
+       visibility: hidden;
+       transition: 1s opacity,1s visibility;
+    }
+    .home .icon{
+        width :30px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    .home .icon span{
+       width: 100%;
+       height: 3px;
+       display: inline-block;
+       background-color: red;
+       position: absolute;
+    }
+    .icon span:nth-child(1){
+        top: 15px;
+    }
+    .icon span:nth-child(2){
+        top: 50%;
+        transform: translateY(50%);
+    }
+    .icon span:nth-child(3){
+        bottom: 10px;
+    }
+    .home .icon:hover + ul{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .home .navbar ul li {
+        float: none;
+    }
+    .home .navbar ul li a {
+        font-size: 12px;
+    }
+    .home .navbar .title{
+        left: 10px;
+    }.home .home-caption h1{
+        right: 25%;
+        font-size: 50px;
+    }
+    .home .home-caption h4{
+        right: 30%;
+        font-size: 20px;
+    }
+.home  .home-caption h4::after{
+
+    font-size: 20px;}
+
+
+    /* Start Rwd of about Section */
+      .about .about-picture{
+          width: 100%;
+        }
+     .about .about-Content{
+             width: 100%;
+             float: left;  
+             left: 0;
+             margin-top: 20px;
+            }
+    .about .about-Content .list .Left-list{
+           width: 50%;
+        }
+   /* End responsive of home section */
+   
+    .services .Services-content .item{
+        width: 50%;
+    }
+
+    
+  
+ /* ----------------Counter Section-------------- */
+       .Counter .counter-content .Counter-item{
+        width:50%;
+        margin-top: 20px;
+    }
+ /*----------- feedback Section ---------------*/
+ .feedback .feedback-content{
+    width: 100%;
+    padding: 50px 20px;
+    
+}
+.feedback .feedback-content .feed-profile{
+    width: 100%;  
+    margin:20px auto;
+}
+.feedback .feedback-content .feed-brief{
+    width: 100%;
+    margin-top: 10px;
+ 
+}
+  /* Blog Section */
+
+  .Blog .Blog-item{
+    width: 100%;
+    padding: 10px;
+}
+
+/* Contact Section */
+
+#name , #Email{
+    width: 100%;
+    margin-left: 0;
+}
+}
+
+
+/* -----------------max-width=>992----------------- */
+@media screen and (min-width:768px) and (max-width:992px) {
+    
+   /* Start responsive of home section */
+
+    .home .navbar ul{
+        width: 70%;
+    }
+    .home .navbar ul li {
+        margin-left: 30px;
+    }
+    .home .navbar ul li a {
+        font-size: 15px;
+    }
+    .home .navbar .title{
+        left: 30px;
+    }
+    .home .home-caption h1{
+        right: 30%;
+    }
+    .home .home-caption h4{
+        right: 30%;
+    }
+
+   /* End responsive of home section */
+
+    .services .Services-content .item{
+        width: 50%;
+    }
+     /* Start Rwd of about Section */
+     .about .about-picture{
+        width: 35%;
+      }
+         .about .about-Content{
+         width: 65%;
+        float: right;  
+        left: 0;
+          }
+     .about .about-Content .list .Left-list{
+         width: 50%;
+      }
+      /* Portfolio */
+      .Portfolio .Portfolio-content .items-one .img{
+        width: 50%;
+        padding-top: 10px;
+    }
+    .Portfolio .Portfolio-content .items-two .img{
+        width: 50%;
+        padding-top: 50px;
+    
+    }
+       /* ----------------Counter Section-------------- */
+       .Counter .counter-content .Counter-item{
+        width: 50%;
+        margin-top: 20px;
+    }
+    /*----------- feedback Section ---------------*/
+ .feedback .feedback-content{
+    width: 100%;
+    padding: 50px 20px;
+    
+}
+.feedback .feedback-content .feed-profile{
+    width: 100%;  
+    margin:20px auto;
+}
+.feedback .feedback-content .feed-brief{
+    width: 100%;
+    margin-top: 10px;
+ 
+}
+     /* Blog Section */
+
+     .Blog .Blog-item{
+        width: 100%;
+        padding: 10px;
+    }
+    /* Contact Section */
+
+#name , #Email{
+    width: 100%;
+    margin-left: 0;
+}
+
+}
+
+
+/* ---------------max-width=>1200 ------------------*/
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+   /* Start responsive of home section */
+    
+    .home .navbar ul{
+        width: 60%;
+    }
+    .home .navbar ul li {
+        margin-left: 20px;
+    }
+    .home .navbar .title{
+        left: 50px;
+    }
+   /* End responsive of home section */
+
+    .services .Services-content .item{
+        width: 33.333333%;
+    }
+       /*----------- feedback Section ---------------*/
+ .feedback .feedback-content{
+    width: 100%;
+    padding: 50px 20px;
+    
+}
+.feedback .feedback-content .feed-profile{
+    width: 30%;  
+    margin:20px auto;
+}
+.feedback .feedback-content .feed-brief{
+    width: 70%;
+    margin-top: 10px;
+ 
+}
+}
