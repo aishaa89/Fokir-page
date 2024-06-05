@@ -558,26 +558,16 @@ text-align: center;
 .feedback .feedback-content{
     width: 80%;
     margin:0px auto;
-    background-color: #F1F1F1;
+    background-image: linear-gradient(135deg,#FF305B 0% 20%,#F1F1F1 20% 100%);
     border-radius: 5px;
     padding: 50px 100px;
-    position: relative;
-    top: 60px;
-}
-.feedback .feedback-content::before{
-    content: "";
-    border-left: 200px solid #FF305B; 
-     border-right: 200px solid transparent;      
-   border-bottom: 200px solid transparent; 
-    position: absolute;
-    left: 0px;
-    top:0px;
    
 }
+
 .feedback .feedback-content .feed-profile{
     width: 25%;
     float: left;
-    
+   
 }
 .feedback .feedback-content .feed-profile img{
     width: 100%;
@@ -589,7 +579,6 @@ text-align: center;
     width: 75%;
     float: right;
     padding-left: 50px;
-    /* background-color: #ff305b; */
     
 }
 .feedback .feedback-content .feed-brief h3{
